@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+#container{
+}
+
+.mainSlider{
+    position: relative;
+    height:600px;
+    overflow: hidden;
+}
+.mainSlider img{
+    position: absolute;
+    left:50%;
+    margin-left: -960px;
+}
+
+.mainSlider ul{
+    position: absolute;
+}
+.mainSlider ul li{
+    text-indent:-9999px;/*font-size:0; 가능*/    
+    float: left;
+}
+.mainSlider ul a{
+    display: block;/*a인라인값이라서 텍스트인덴트값때문에 클릭불가*/
+    height: 100%;
+}
+.sliderLBtn{
+    bottom: 30px;
+    left:50%;
+    margin-left:-600px;/*이너맞추기*/
+}
+.sliderLBtn li{
+    width: 16px;
+    height: 16px;
+    background: url(../images/main/blet_visual.png) no-repeat;
+    margin-right: 5px;
+}
+.sliderLBtn .on{
+    background-position: 0 -16px;
+}
+
+.sliderRBtn{
+    bottom:0;
+    right:50%;
+    margin-right:-600px;
+}
+.sliderRBtn li{
+    width:45px;
+    height: 45px;
+    background:url(../images/main/btn_visual_cnt.png) no-repeat;
+    margin-left:1px;
+}
+.sliderRBtn li:nth-child(2){
+    background-position: -46px 0;
+}
+.sliderRBtn li:last-child{
+    background-position: -92px 0;
+}
+
+/*메인컨텐츠01*/
+.mainCon01{
+    background:#1C97FE;
+}
+.mainCon01 ul{}
+.mainCon01 li{
+    width:273px;
+    float:left;
+    margin-right: 36px;
+    padding: 50px 0;
+}
+.mainCon01 li:last-child{
+    margin-right:0;
+}
+.mainCon01 li h3{
+    color: #fff;
+}
+.mainCon01 a{
+    color:#fff;
+}
+.mainCon01 a img{
+    width:100%;/*이미지가 273보다 커서 튀어나감*/
+    margin: 10px 0;
+}
+.mainCon01 a p{
+    font-size:12px;
+    letter-spacing:1px;;/*영문은 자간줄이지안ㄴ흔다..*/
+}
+
+/*메인컨텐츠02*/
+
+.mainCon02{
+    background: url("../images/main/brandSite_bg.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+}
+.mainCon02 h2{}
+.mainCon02 ul{
+    margin-top: 30px
+}
+.mainCon02 li{
+    float:left;
+    width:273px;
+    margin-right: 36px;
+}
+.mainCon02 li:last-child{
+    margin-right: 0;
+}
+.mainCon02 li img{
+    display: block;
+}
+.mainCon02 li p{
+    font-weight: bold;/*글자굵기*/
+    margin: 20px 0 30px 0;
+}
+.mainCon02 li span{
+    font-size: 12px;
+}
+.mainCon02 li a{
+    background:#263D94;
+    color: #fff;
+    width:130px;
+    display: block;/*인라인-블록주면 중간정렬됨*/
+    margin: 0 auto;/*블록중간정렬하는법*/
+    /*display:inline-block*/
+    line-height: 40px;
+    border-radius:20px;/*원*/
+}
+
+/*메인컨텐츠03*/
+.mainCon03{
+    padding: 50px 0;
+}
+.mainCon03 h2{
+    text-align: center;/*인라인요소만 먹음*/
+    margin-bottom: 30px;
+}
+.mainCon03 ul{}
+.mainCon03 ul li{
+    float:left;
+    width:376px;
+    margin-right: 36px;
+    /*box-shadow: x y size퍼지는정도 distance거리 color;*/
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);/*rgba(a는알파값=오퍼시티(0,0,0,1)->100퍼센트라는말)*/
+}
+.mainCon03 li:last-child{
+    margin-right: 0;
+}
+.mainCon03 ul li img{
+    display: block;
+    width:100%;/*?*/
+}
+
+.brandInfo{
+    padding: 20px;
+}
+.brandInfo h3{}
+.brandInfo p{
+    margin-bottom: 20px;
+    /*text-shadow:x y radius color*/
+}
+.brandInfo a{
+    width:110px;
+    display: block;
+    background: #1C97FE;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 30px;
+}

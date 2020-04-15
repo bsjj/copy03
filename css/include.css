@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+#header{
+    font-size: 14px;
+    line-height: 80px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+#header h1{
+    float: left;
+    margin-right: 30px;
+}
+.gnb{
+    float: left;
+}
+
+.gnb li{
+    float:left;
+    margin-left: 50px;
+}/*
+방법1 :float:lefts
+방법2: 로고와 유틸 등 세개중에 두대 띄우기*/
+.gnb li:hover a{
+    color:blue;
+    text-decoration: underline;
+}/*호버*/
+.gnb li a{}
+
+
+.utill{
+    float:right;
+}
+.utill li{
+    float: left;
+    margin-left: 10px;
+}
+.utill a{}
+.utill .on a{
+    color: #007cc0;
+    font-weight: bold;/*글자 두껍게*/
+}
+/*
+.utill li.on - utill클래스 안의 on이란 클래스를 가진 li
+.utill li .on 차이 - utill클래스 안 li안 on클래스
+*/
+
+#footer{
+    font-size:10px;
+    letter-spacing: -1px;
+    color: #ccc;
+    border-top: 1px solid #eee;
+    padding:30px 0;
+}
+#footer h1{
+    float: left;
+    margin-right: 20px;
+    height: 65px;
+    line-height: 65px;
+}
+#footer h1 img{}
+#footer .inner{
+    position: relative;
+}
+
+.fInfo{
+    float:left;
+}
+.fInfo ul{
+    margin-bottom: 10px;
+}
+.fInfo ul li{
+    float: left;
+}
+.fInfo ul li:before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background: #ccc;
+    margin: 0 5px;
+}
+.fInfo ul li:first-child:before{
+    display: none;
+}
+.fInfo ul a{
+    color: #ccc;
+}
+.fInfo p{}
+
+.fMark{
+    position: absolute;
+    right: 0;
+    
+}
+.fMark a{}
+.fMark img{}
